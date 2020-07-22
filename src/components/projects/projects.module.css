@@ -1,0 +1,19 @@
+.Projects {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.Projects a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin-top: 25px;
+}
+
+.AnchorText {
+  transition: color 0.2s;
+}
+
+.AnchorText:hover {
+  color: orange;
+}

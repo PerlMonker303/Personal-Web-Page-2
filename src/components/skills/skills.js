@@ -9,14 +9,14 @@ const skills = (props) => {
     { title: "Mobile", skills: "React, Ionic" },
     {
       title: "Other",
-      skills: `I also have a solid understanding of C++, Git, NPM, Bash, Python,
+      skills: `Solid understanding of C++, Git, NPM, Bash, Python,
          Object-Oriented Programming, Data Structures and Algorithms`,
     },
   ];
   return (
     <div>
       {skillsListed.map((sk) => (
-        <div className={styles.Skills}>
+        <div className={styles.Skills} key={sk.title}>
           <strong>{sk.title}</strong>: <br />
           <span>{sk.skills}</span>
         </div>

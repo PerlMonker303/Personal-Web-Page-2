@@ -1,6 +1,6 @@
 .Block {
   display: block;
-  height: 90vh;
+  min-height: 85vh;
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
     "Helvetica Neue", Arial, sans-serif;
   padding: 20px 10px;
@@ -16,6 +16,7 @@
   background-color: #fff;
   color: black;
   text-align: right;
+  margin-right: 20px;
 }
 
 .InternalLeft h1 {
@@ -29,6 +30,7 @@
 .InternalRight p {
   display: block;
   font-size: large;
+  margin-top: 30px;
 }
 
 .InternalLeft p {

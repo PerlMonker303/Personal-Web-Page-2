@@ -8,9 +8,35 @@ html {
   text-align: center;
 }
 
+.ContactButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-style: none;
+  padding: 10px 14px;
+  font-size: large;
+  border-radius: 6px;
+  background-color: orange;
+  color: white;
+  user-select: none;
+  transition: background-color 0.2s, color 0.1s, box-shadow 0.3s;
+}
+
+.ContactButton:hover {
+  background-color: #fff;
+  color: black;
+  box-shadow: 4px 4px orange;
+  cursor: pointer;
+}
+
+.ContactButton:focus {
+  outline: 0;
+}
+
 .Welcome h1 {
   position: relative;
   top: 34vh;
+  text-shadow: 1px 1px #999;
 }
 
 .LearnMore {
@@ -134,5 +160,6 @@ html {
 }
 
 .LearnMore:hover {
-  color: #aaa;
+  color: orange;
+  cursor: pointer;
 }

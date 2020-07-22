@@ -1,0 +1,40 @@
+.Inputs {
+}
+
+.InputsTop {
+  width: 80%;
+  margin: auto;
+  display: block;
+  flex-direction: row;
+}
+
+.InputsBottom {
+  width: 80%;
+  margin: auto;
+  display: block;
+  flex-direction: row;
+}
+
+.Button {
+  display: block;
+  margin: auto;
+  border-style: none;
+  padding: 10px 14px;
+  font-size: large;
+  border-radius: 6px;
+  background-color: orange;
+  color: white;
+  user-select: none;
+  transition: background-color 0.2s, color 0.1s, box-shadow 0.3s;
+}
+
+.Button:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 4px 4px orange;
+  cursor: pointer;
+}
+
+.Button:focus {
+  outline: 0;
+}

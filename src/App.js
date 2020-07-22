@@ -3,11 +3,14 @@ import React, { Component } from "react";
 import Welcome from "./components/welcome/welcome";
 import Block from "./components/block/block";
 import Skills from "./components/skills/skills";
+import Projects from "./components/projects/projects";
+import Contact from "./components/contact/contact";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.myRef = React.createRef();
+    this.firstRef = React.createRef();
+    this.contactRef = React.createRef();
   }
 
   state = {
@@ -36,33 +39,39 @@ class App extends Component {
         title: "WHAT I did",
         align: "left",
         content: [],
-      },
-      {
-        id: 3,
-        title: "CONTACT ME",
-        align: "right",
-        content: [],
+        inside: <Projects />,
       },
     ],
   };
 
-  scrollToRef = () => window.scrollTo(0, this.myRef.current.offsetTop);
+  scrollToRef = (rf) => window.scrollTo(0, rf.current.offsetTop);
+
+  scrollToBlock = () => {
+    console.log("SCROLLED");
+  };
+
   render() {
-    const executeScroll = () => this.scrollToRef(this.myRef);
+    const executeFirstScroll = () => this.scrollToRef(this.firstRef);
+
+    const executeContactScroll = () => this.scrollToRef(this.contactRef);
 
     return (
       <div className="App">
-        <Welcome executeScroll={executeScroll} />
+        <Welcome
+          firstScroll={executeFirstScroll}
+          contactScroll={executeContactScroll}
+        />
         {this.state.blocks.map((block) => (
           <Block
             key={block.id}
             title={block.title}
             align={block.align}
             content={block.content}
-            refference={block.id === 0 ? this.myRef : null}
+            refference={block.id === 0 ? this.firstRef : null}
             inside={block.inside}
           />
         ))}
+        <Contact contactRef={this.contactRef} />
       </div>
     );
   }

@@ -1,0 +1,41 @@
+.Project {
+  background-color: #fff;
+  color: #000;
+  display: inline-block;
+  width: 40%;
+  margin: 8px;
+  padding: 12px;
+  text-align: center;
+  min-width: 350px;
+  box-shadow: 4px 4px orange;
+  transition: box-shadow 0.3s;
+}
+
+.Project:hover {
+  box-shadow: -6px -6px orange;
+}
+
+@media (max-width: 380px) {
+  .Project {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+  .Project {
+    min-width: 200px;
+  }
+}
+
+.Description {
+  display: block;
+}
+
+.AnchorText {
+  color: #000;
+  transition: color 0.2s;
+}
+
+.AnchorText:hover {
+  color: orange;
+}

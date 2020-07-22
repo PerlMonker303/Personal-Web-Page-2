@@ -14,7 +14,7 @@ const block = (props) => {
     <div className={classes} ref={props.refference ?? null}>
       <h1>{props.title}</h1>
       {props.content.map((c) => (
-        <p>{c}</p>
+        <p key={c}>{c}</p>
       ))}
       {props.inside}
     </div>

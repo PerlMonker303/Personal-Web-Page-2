@@ -1,17 +1,24 @@
-import React, { useRef } from "react";
+import React from "react";
 
 import styles from "./welcome.module.css";
+import globalStyles from "../../App.module.css";
 
 const Welcome = (props) => {
   return (
     <div className={styles.Welcome}>
-      <h1>Hi, I'm Andrei-Robert Alexandrescu. I build software.</h1>
-      <a className={styles.LearnMore} onClick={props.executeScroll} href="#">
+      <button className={styles.ContactButton} onClick={props.contactScroll}>
+        Contact
+      </button>
+      <h1>
+        Hi, I'm Andrei-Robert Alexandrescu. I build
+        <span className={globalStyles.Special}> software</span>.
+      </h1>
+      <span className={styles.LearnMore} onClick={props.firstScroll}>
         <br />
         <span>Learn more about me</span>
         <br />
         <strong>v</strong>
-      </a>
+      </span>
     </div>
   );
 };

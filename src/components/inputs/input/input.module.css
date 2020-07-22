@@ -1,0 +1,41 @@
+.Input {
+  margin: 5px;
+  display: inline-block;
+  font-size: large;
+}
+
+.Label {
+  font-size: larger;
+}
+
+.Inp {
+  margin-top: 10px;
+  border-radius: 3px;
+  border-width: 1px;
+  font-size: large;
+  padding: 4px;
+}
+
+.Textarea {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 3px;
+  font-size: large;
+  padding: 4px;
+  height: 150px;
+  min-width: 450px;
+  resize: none;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 565px) {
+  .Textarea {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 385px) {
+  .Textarea {
+    min-width: 230px;
+  }
+}

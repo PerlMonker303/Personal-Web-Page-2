@@ -1,0 +1,28 @@
+.Contact {
+  display: block;
+  min-height: 85vh;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  padding: 20px 10px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.Message {
+  display: block;
+  width: 250px;
+  margin: auto;
+  color: white;
+  padding: 1px;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: display 0.2s;
+}
+
+.SuccessMessage {
+  background-color: green;
+}
+
+.ErrorMessage {
+  background-color: red;
+}
