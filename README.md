@@ -6,4 +6,4 @@
   <li>mobile friendly</li>
 </ul>
 
-<a href="">Access it here</a>
+<a href="https://alexandrescu-page.herokuapp.com" target="_blank" rel="noopener noreferrer">Access it here</a>
