@@ -1,0 +1,138 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.Welcome {
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+}
+
+.Welcome h1 {
+  position: relative;
+  top: 34vh;
+}
+
+.LearnMore {
+  text-decoration: none;
+  position: relative;
+  top: 75vh;
+  text-align: center;
+  color: #000;
+  transition: color 0.2s ease;
+  animation: slide 3s -2.4s ease-in-out infinite;
+}
+
+@keyframes slide {
+  0% {
+    top: 75vh;
+  }
+  50% {
+    top: 77vh;
+  }
+  100% {
+    top: 75vh;
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    top: 75vh;
+  }
+  50% {
+    top: 77vh;
+  }
+  100% {
+    top: 75vh;
+  }
+}
+
+@media (max-width: 814px) {
+  .LearnMore {
+    /*background-color: red;*/
+    top: 70vh;
+  }
+  @keyframes slide {
+    0% {
+      top: 70vh;
+    }
+    50% {
+      top: 72vh;
+    }
+    100% {
+      top: 70vh;
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      top: 70vh;
+    }
+    50% {
+      top: 72vh;
+    }
+    100% {
+      top: 70vh;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .LearnMore {
+    /*background-color: green;*/
+    top: 65vh;
+  }
+  @keyframes slide {
+    0% {
+      top: 65vh;
+    }
+    50% {
+      top: 67vh;
+    }
+    100% {
+      top: 65vh;
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      top: 65vh;
+    }
+    50% {
+      top: 67vh;
+    }
+    100% {
+      top: 65vh;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .LearnMore {
+    /*background-color: blue;*/
+    top: 50vh;
+  }
+  @keyframes slide {
+    0% {
+      top: 50vh;
+    }
+    50% {
+      top: 52vh;
+    }
+    100% {
+      top: 50vh;
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      top: 50vh;
+    }
+    50% {
+      top: 52vh;
+    }
+    100% {
+      top: 50vh;
+    }
+  }
+}
+
+.LearnMore:hover {
+  color: #aaa;
+}

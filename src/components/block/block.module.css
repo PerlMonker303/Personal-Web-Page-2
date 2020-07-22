@@ -1,0 +1,46 @@
+.Block {
+  display: block;
+  height: 90vh;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  padding: 20px 10px;
+}
+
+.InternalLeft {
+  background-color: #000;
+  color: white;
+  text-align: left;
+}
+
+.InternalRight {
+  background-color: #fff;
+  color: black;
+  text-align: right;
+}
+
+.InternalLeft h1 {
+  text-shadow: 2px 2px #444;
+}
+.InternalRight h1 {
+  text-shadow: 2px 2px #eee;
+}
+
+.InternalLeft p,
+.InternalRight p {
+  display: block;
+  font-size: large;
+}
+
+.InternalLeft p {
+  max-width: 50%;
+}
+
+.InternalRight p {
+}
+
+@media (max-width: 814px) {
+  .InternalLeft p,
+  .InternalRight p {
+    max-width: 82%;
+  }
+}
