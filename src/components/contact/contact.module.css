@@ -20,9 +20,20 @@
 }
 
 .SuccessMessage {
-  background-color: green;
+  background-color: orange;
 }
 
 .ErrorMessage {
   background-color: red;
+}
+
+.Icon {
+  margin-top: 25px;
+  text-decoration: none;
+  color: black;
+  padding: 3px;
+}
+
+.Icon:hover {
+  opacity: 60%;
 }

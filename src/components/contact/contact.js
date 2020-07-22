@@ -4,6 +4,9 @@ import styles from "./contact.module.css";
 import Inputs from "../inputs/inputs";
 import { MailSlurp } from "mailslurp-client";
 
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
+
 const API_KEY =
   "fb36376584e9241df87ef96d011514fabd4aac2b55ddf24ddbd709782c270d71";
 const mailSlurp = new MailSlurp({ apiKey: API_KEY });
@@ -126,6 +129,23 @@ class Contact extends Component {
           changed={this.changeValue}
         />
         {message}
+        <a
+          href="https://github.com/PerlMonker303"
+          className={styles.Icon}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GitHubIcon className={styles.Icon} fontSize="large" />
+        </a>
+
+        <a
+          href="https://ro.linkedin.com/in/andrei-robert-alexandrescu-189aa7192?challengeId=AQHMweIx14LFTAAAAXN3gxYW0B8ujAhQF6_vsRyXUEfORGzTxHWdWRQb0Od3_SduGbyQKP122b-h3TpEceJziNTDKEFAYDQ7aw&submissionId=81844ae9-5b22-2416-766d-e60dde1f8054"
+          className={styles.Icon}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkedInIcon className={styles.Icon} fontSize="large" />
+        </a>
       </div>
     );
   }
